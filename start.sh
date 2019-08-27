@@ -1,6 +1,7 @@
 #! /bin/bash
-if [ -f "$HOME/config.development.json" ];then
-    ./setup.sh
-fi
-node ghost config --port "$PORT" --url "http://localhost:$PORT"
+
+cd ghost
+ln -s config.development.json config.production.json
+node ghost config --port "$PORT" --url "http://localhost:$PORT" --dbpath "$HOME/ghost/content/data/ghost-local.db"
+node ghost config paths.contentPath "$HOME/ghost/content"
 node ghost start
