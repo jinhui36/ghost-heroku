@@ -1,5 +1,5 @@
 #! /bin/bash
 
-cd "$HOME/ghost"
+cd "$HOME"
 
-node current/index.js
+node index.js

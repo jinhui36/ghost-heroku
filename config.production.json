@@ -7,7 +7,7 @@
   "database": {
     "client": "sqlite3",
     "connection": {
-      "filename": "/home/sysadmin/ghost/ghost-heroku/ghost/content/data/ghost-local.db"
+      "filename": "/home/site/data/ghost-local.db"
     }
   },
   "mail": {
@@ -21,6 +21,6 @@
   },
   "process": "local",
   "paths": {
-    "contentPath": "/home/sysadmin/ghost/ghost-heroku/ghost/content"
+    "contentPath": "/home/site"
   }
 }

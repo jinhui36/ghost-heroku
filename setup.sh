@@ -1,9 +1,9 @@
 #! /bin/bash
 
 cd "$HOME"
-chmod a+r ghost
+chmod a+r content
+chmod a+r core
+chmod a+r site
 
-cd "$HOME/ghost"
-
-ghost config --port "$PORT" --url "http://localhost:$PORT" --dbpath "$HOME/ghost/content/data/ghost-local.db"
-ghost config paths.contentPath "$HOME/ghost/content"
+ghost config --port "$PORT" --url "http://localhost:$PORT" --dbpath "$HOME/site/data/ghost-local.db"
+ghost config paths.contentPath "$HOME/site"
